@@ -1,0 +1,164 @@
+:root {
+  --dark-bg: #3B3B3B;
+}
+
+@font-face {
+  font-family: fedra-sans;
+  src: url("fonts/fedra-sans.ttf");
+  font-weight: normal;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: fedra-sans;
+  background-color: #E3E3E3;
+  margin: 0;
+  flex-direction: column;
+  height: 100%;
+}
+
+::selection {
+  background-color: var(--dark-bg);
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  margin-bottom: 40px;
+  padding: 30px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+}
+
+.menu a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  background-color: #EFEFEF;
+  margin: 10px;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.menu a:hover {
+  background-color: var(--dark-bg);
+  color: white;
+  transform: translateY(-3px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+h2 {
+  margin: 40px;
+}
+
+main {
+  font-size: 17px;
+  background-color: white;
+  flex: 1 0 auto;
+  width: 1300px;
+  margin: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 20px solid #EFEFEF;
+  padding: 20px;
+}
+
+table {
+  font-size: 24px;
+  text-align: center;
+  border: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+th {
+  background-color: var(--dark-bg);
+  color: white;
+  border: 1px solid white;
+  padding: 20px;
+  font-weight: bold;
+}
+
+tr {
+  transition: all 0.3s ease;
+}
+
+tr:hover {background: #9E9E9E}
+
+.dark-row {
+  background-color: #AAA;
+}
+
+td {
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.null {
+  background-color: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.sign * {
+  outline: 0;
+  background: white;
+}
+
+.sign button {
+  --margin: 10px;
+  background-color: #4B4B4B;
+  color: white;
+  border: 0;
+  margin-top: var(--margin);
+  margin-bottom: var(--margin);
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.sign button:hover {
+  background-color: var(--dark-bg);
+}
+
+.sign button:active {
+  background-color: white;
+  color: black;
+}
+
+footer {
+  background-color: var(--dark-bg);
+  color: #808080;
+  flex: 0 0 auto;
+  margin-top: 200px;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+footer:hover {
+  color: white;
+}
+
+#links {
+  position: absolute;
+}

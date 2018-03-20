@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/diary.jpg" type="image/jpg">
+    <title>Расписание | Регистрация на сайте</title>
+  </head>
+  <body>
+    <header>
+      <h1>Расписание</h1>
+      <div class="menu">
+        <a href="home.html">Домой</a>
+        <a href="sign-in.html">Вход</a>
+        <a href="sign-up.html">Регистрация</a>
+        <a href="html.html">Объявления</a>
+        <a href="schedule.html">Расписание уроков</a>
+        <a href="time.html">Расписание звонков</a>
+        <a href="html.html">Домашние задания</a>
+      </div>
+    </header>
+    <div class="wrapper">
+      <main>
+        <h1>Регистрация на сайте</h1>
+        <form class="sign" action="scripts/sign-up.js" method="post">
+          <p>
+            <label>Имя:</label>
+            <input class="input-text" type="text" name="name">
+          </p>
+          <p>
+            <label>Фамилия:</label>
+            <input type="text" name="surname">
+          </p>
+          <p>
+            <label>Возраст:</label>
+            <input type="number" name="age">
+          </p>
+          <p>
+            <label>Какие-то кружки:</label>
+            <label>Кнопка 1</label>
+            <input type="radio" name="rad1" value="rad1">
+            <label>Кнопка 2</label>
+            <input type="radio" name="rad2" value="rad2">
+            <label>Кнопка 3</label>
+            <input type="radio" name="rad3" value="rad3">
+          </p>
+          <p>
+            <label>Какие-то галочки:</label>
+            <label>Кнопка 1</label>
+            <input type="checkbox" name="ch1" value="ch1">
+            <label>Кнопка 2</label>
+            <input type="checkbox" name="ch2" value="ch2">
+            <label>Кнопка 3</label>
+            <input type="checkbox" name="ch3" value="ch3">
+          </p>
+          <p>
+            <label>Электронная почта:</label>
+            <input type="email" name="email">
+          </p>
+          <p>
+            <label>Пароль:</label>
+            <input type="password" name="password">
+          </p>
+          <p>
+            <label>Подтвердите пароль:</label>
+            <input type="password" name="confirm_password">
+          </p>
+          <p>
+            <input type="checkbox" name="agree" value="yes">
+            <label>Я согласен с <a href="">правилами</a>, которых нет.</label>
+          </p>
+          <button type="button" name="button">Зарегистрироваться</button>
+        </form>
+        Потом надо будет выровнять и скрипт написать.
+      </main>
+    </div>
+    <footer>
+      Вот такое у нас расписание.
+    </footer>
+  </body>
+</html>
